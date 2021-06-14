@@ -1,0 +1,725 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	background-color: whitesmoke;
+}
+
+
+.clear{
+	clear: both;
+}
+
+/* Header */
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #a83535;
+	border-bottom: 1px solid black;
+}
+
+header .logo-container{
+	border: 1px solid white;
+	width: 100%;
+	max-width: 100px;
+	height: 50px;
+	background-position: center;
+	margin-left: 140px;
+	width: 100%;
+	height: 100%;
+	background-image: url(/imagens/Batatchê.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+/* Menu */
+
+header .menu{
+	color: white;
+	float: right;
+	width: max-content;
+	height: min-content;
+	margin-top: -58px;
+	margin-right: 155px;
+	border-right: 1px solid white;
+}
+
+.menu ul li{
+	display: inline;
+}
+
+.menu ul li  {
+	padding: 0 40px;
+	font-size: 34px;
+	text-decoration: none;
+	font-style: italic;
+	color: white;
+	cursor: pointer;
+}
+
+.menu ul li.last{
+	padding-right: 10px;
+}
+
+
+.menu ul li:hover{
+	color: #f18a4a;
+}
+
+/* Menu Mobile */
+
+.menu-mobile{
+	color: white;
+	background-color: #a83535;
+	width: 100%;
+	height: min-content;
+	z-index: 9999;
+	position: absolute;
+	margin-top: 1.4px;
+	box-shadow: 2px 4px 5px gray;
+	display: none;
+}
+
+.menu-mobile ul{
+	display: none;
+}
+
+
+
+.menu-mobile ul li{
+	border: 1px solid #f18a4a;
+	border-right: none;
+	border-left: none;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+	font-size: 24px;
+	cursor: pointer;	
+}
+
+li:hover{
+	color: #ff914d;
+}
+
+/* Logo menu mobile */
+
+.logo-menu-mobile{
+	width: min-content;
+	height: min-content;
+	float: right;
+	z-index: 999;
+	width: 56px;
+	height: 56px;
+	background-image: url(/imagens/hamburger-menu-icon-png-white-10.jpg);
+	background-repeat: no-repeat;
+	display: none;
+	background-size: cover;
+	margin-top: -75px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+/* Redes Sociais */
+
+.redesSociais{
+	width: 120px;
+	float: right;
+	margin-top: -66px;
+	height: 58px;
+	margin-right: 22px;
+	display: flex;
+}
+
+.redesSociais .face{
+	background-image: url(/imagens/facebook.png);
+	background-color: white;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	max-width: 48px;
+	height: 100%;
+	max-height: 48px;
+	cursor: pointer;
+}
+
+.redesSociais .ig{
+	background-image: url(/imagens/instagram.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	max-width: 48px;
+	height: 100%;
+	max-height: 48px;
+	margin: 0 12px;
+	cursor: pointer;
+}
+
+/* Slider */
+.slider {
+	width: 100%;	
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 630px;
+	position: relative;
+}
+
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 5s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+/* Arrow animation */
+
+.arrow-container{
+	width: 52px;
+	height: 52px;
+	background-image: url(/imagens/next.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 670px;
+	left: 48%;
+	animation: MoveUpDown 1.5s infinite linear;
+	cursor: pointer;
+	filter: invert(100%);
+}
+
+@keyframes MoveUpDown {
+	0%, 100%{
+		margin-top: -10px;
+	}
+	50%{
+		margin-top: -40px;
+	}
+}
+
+.arrow-container p {
+	transform: rotate(-90deg);
+	color: black;
+	margin-top: 50px;
+	margin-left: 64px;
+	font-weight: bold;
+}
+
+/* Sabores */
+
+.sabores-container{
+	width: 100%;
+	height: 100%;
+	min-height: 700px;
+	background-color: whitesmoke;
+}
+
+.sabores-title{
+	width: 100%;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.line{
+	border-bottom: 4px solid #f18a4a;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.cont{
+	display: flex;
+	margin-top: 20px;
+}
+
+.sabores-left{
+	width: 50%;
+	height: 100%;
+	min-height: 100px;
+	padding-left: 10px;
+}
+
+.sabores-rigth{
+	width: 50%;
+	height: 100%;
+	min-height: 100px;
+}
+
+.box{
+	width: 80%;
+	min-width: 220px;
+	height: 100%;
+	min-height: 200px;
+	margin-left: 30px;
+	margin: 20px;
+	display: flex;
+}
+
+.box .box-image{
+	width: 220px;
+	min-width: 220px;
+	border: 4px solid #ff914d;
+	border-radius: 10px;
+	height: 170px;
+}
+
+/* sabores imagens */
+
+.bacon{
+	background-image: url(/imagens/bacon.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.bolonhesa{
+	background-image: url(/imagens/batata04.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.frango{
+	background-image: url(/imagens/frango.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.carne{
+	background-image: url(/imagens/carne.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.calabresa{
+	background-image: url(/imagens/calabresa.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.brocolis{
+	background-image: url(/imagens/brocolis.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box .titleAndText{
+	width: 300px;
+	height: 170px;
+	margin-left: 8px;
+}
+
+.box .titleAndText .title{
+	font-size: 23px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-bottom: 1px dotted #102;
+	color: #102a42;
+}
+
+.box .title span{
+	margin-left: 90px;
+	font-size: 20px;
+	color: #c59d5f;
+}
+
+.sabores-left .box:nth-of-type(2) span{
+	margin-left: 118px;
+}
+
+.sabores-left .box:nth-of-type(3) span{
+	margin-left: 18px;
+}
+
+.sabores-rigth .box:nth-of-type(1) span{
+	margin-left: 30px;
+}
+
+.sabores-rigth .box:nth-of-type(2) span{
+	margin-left: 127px;
+}
+
+.sabores-rigth .box:nth-of-type(3) span{
+	margin-left: 155px;
+}
+
+.box .titleAndText .text{
+	width: 280px;
+	height: 120px;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: #617D98;
+}
+
+/* FeedBack */
+
+.feedBack-container{
+	min-height: 200px;
+	height: 100%;
+	background-color:#fff;
+}
+
+.feedBack-container .feedBack-title{
+	padding-top: 30px;
+}
+
+.feedBack-title h1{
+	text-align: center;
+	color: black;
+}
+
+.lines{
+	border-bottom: 4px solid #f18a4a;
+	width: 160px;
+	margin: 0 auto;
+}
+
+.feedBack-container .box-container{
+	width: 100%;
+	max-width: 500px;
+	height: 100%;
+	margin: 40px auto;
+	padding-bottom: 60px;
+	display: flex;
+}
+
+.feedBack-container .left-arrow{
+	background-image: url(/imagens/up-arrow.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 32px;
+	height: 32px;
+	transform: rotate(-90deg);
+	margin-top: 60px;
+	cursor: pointer;
+}
+
+.feedBack-container .feedBack-box{
+	background-color: #ff914d;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 400px;
+	height: 150px;
+}
+
+.second{
+	display: none;
+}
+
+.third{
+	display: none;
+}
+
+.feedBack-box p{
+	margin: 20px auto;
+	font-size: 23px;
+	width: 320px;
+	color: black;
+	font-style: oblique;
+}
+
+.feedBack-box cite{
+	margin-left: 260px;
+}
+
+
+/* Dots */
+
+.dots-container{
+	width: max-content;
+	height: 100%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: -90px;
+	padding-bottom: 40px;
+
+}
+
+.dots-container .dot1{
+	border-radius: 50%;
+	background-color: #ff914d;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+
+.dots-container .dot2{
+	border-radius: 50%;
+	background-color: #a83535;
+	width: 22px;
+	height: 22px;
+	margin:  0 10px;
+	cursor: pointer;
+}
+
+.dots-container .dot3{
+	border-radius: 50%;
+	background-color: #a83535;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+
+/* Footer e Contato */
+
+footer{
+	width: 100%;
+	height: 100%;
+	min-height: 315px;
+	background-color: #a83535;
+}
+
+footer .contato{
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
+	min-height: 200px;
+}
+
+.contato .horarioAtendimento{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.contato .horarioAtendimento h2{
+	text-align: center;
+	color: White;
+}
+
+.horarioAtendimento .line{
+	border-bottom: 4px solid #f18a4a;
+	width: 270px;
+	margin: 0 auto;
+}
+
+.contato p{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+.contato p:nth-of-type(1){
+	margin-top: 10px;
+}
+
+.contato .contato-redes{
+	width: 50%;
+	height: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+}
+
+.contato-redes h2{
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
+
+.contato-redes .line{
+	border-bottom: 4px solid #f18a4a;
+	width: 170px;
+	margin: 0 auto;
+}
+
+.contato-redes .container{
+	display: flex;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.contato-redes .face{
+	background-image: url(/imagens/facebook.png);
+	background-color: white;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 63px;
+	height: 63px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.contato-redes .ig{
+	background-image: url(/imagens/instagram.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 63px;
+	height: 63px;
+	margin: 15px 20px;
+	cursor: pointer;
+}
+
+.contato-redes .whats{
+	background-image: url(/imagens/whatsapp.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 63px;
+	height: 63px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.contato-redes .text{
+	color: white;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.text span{
+	padding: 0 9px;
+}
+
+.modal {
+	background-color: white;
+	width: max-content;
+	color: black;
+	border-radius: 20px;
+	border-bottom-left-radius: 0;
+	z-index: 999;
+	position: relative;
+	left: 480px;
+	top: -100px;
+	display: none;
+}
+
+.modal p{
+	color: black;
+	padding: 2px 10px;
+}
+
+/* Direitos */
+
+.direitos{
+	height: 30px;
+	background-color: black;
+	color: white;
+}
+
+.direitos p{
+	text-align: center;
+	line-height: 30px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1136px){
+	.sabores-left .box:nth-of-type(1) span{
+		margin-left: 80px;
+	}
+
+	.sabores-left .box:nth-of-type(3) span{
+		margin-left: 143px;
+	}
+
+	.sabores-rigth .box:nth-of-type(1) span{
+		margin-left: 150px;
+	}
+
+	.sabores-rigth .box:nth-of-type(2) span{
+		margin-left: 115px;
+	}
+
+	.sabores-rigth .box:nth-of-type(3) span{
+		margin-left: 140px;
+	}
+}
+
+@media screen and (max-width: 1091px){
+	.cont{
+		display: flexbox;
+		flex-direction: column;
+		width: max-content;
+		margin: 0 auto;
+	}
+
+	.sabores-left{
+		margin-top: 25px;
+	}
+
+	.sabores-rigth{
+		margin-top: -20px;
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.redesSociais{
+		display: none;
+	}
+
+	header .menu{
+		position: relative;
+		left: 100px;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 870px){
+	.menu {
+		display: none;
+	}
+
+	.logo-menu-mobile{
+		display: block;
+	}
+
+	.menu-mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.box{
+		display: block;
+		width: 330px;
+		height: 100%;
+	}
+
+	.box .box-image{
+		width: 330px;
+		padding-top: 200px;
+		height: 400px;
+		min-width: 220px;
+		border: 4px solid #ff914d;
+		border-radius: 10px;
+		height: 170px;
+	}
+
+	.box .titleAndText{
+		margin-top: 5px;
+	}
+
+	.bacon{
+		background-position: center;
+		background-position-y: -70px;
+	}
+}
+
+
+
+
+
+
+
