@@ -418,7 +418,8 @@ li:hover{
 	margin: 0 auto;
 	width: 100%;
 	max-width: 400px;
-	height: 150px;
+	height: 100%;
+	max-height: 150px;
 	text-align: right;
 }
 
@@ -718,6 +719,26 @@ footer .contato{
 		background-position: center;
 		background-position-y: -70px;
 	}
+}
+
+@media screen and (max-width: 300px){
+	.carne{
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.contato-redes .text{
+		color: white;
+		width: max-content;
+		margin: 0 auto;
+		margin-rigth: 30px;
+	}
+
+	.text span{
+		padding: 0 9px;
+	}
+	
+	
 }
 
 
