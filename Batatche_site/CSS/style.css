@@ -721,9 +721,11 @@ footer .contato{
 	}
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 540px){
 	.carne{
+		background-image: url(/imagens/carne.jpg);
 		background-position: center;
+		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	
