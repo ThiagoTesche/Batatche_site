@@ -416,8 +416,10 @@ li:hover{
 	background-color: #ff914d;
 	border-radius: 10px;
 	margin: 0 auto;
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 	height: 150px;
+	text-align: right;
 }
 
 .second{
@@ -434,10 +436,11 @@ li:hover{
 	width: 320px;
 	color: black;
 	font-style: oblique;
+	text-align: center;
 }
 
 .feedBack-box cite{
-	margin-left: 260px;
+	margin-right: 10px;
 }
 
 
