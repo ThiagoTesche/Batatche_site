@@ -227,5 +227,10 @@ btn.addEventListener("click", ()=>{
 	}
 });
 
+whatss.addEventListener("click", ()=>{
+	window.location.href = "https://api.whatsapp.com/send?phone=+551989518849";
+});
+
+
 
 
