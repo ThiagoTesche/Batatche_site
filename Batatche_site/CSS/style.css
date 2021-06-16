@@ -743,6 +743,10 @@ footer .contato{
 	}
 	
 	.text span{
+		padding: 0 0px;
+	}
+	
+	.text span:nth-of-type(2){
 		padding: 0 4px;
 	}
 
