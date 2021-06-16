@@ -741,6 +741,10 @@ footer .contato{
 		color: white;
 		width: max-content;
 	}
+	
+	.text span{
+		padding: 0 1px;
+	}
 
 	
 	
