@@ -740,7 +740,6 @@ footer .contato{
 	.contato-redes .text{
 		color: white;
 		width: max-content;
-		display: none;
 	}
 
 	.text span:nth-of-type(2){
